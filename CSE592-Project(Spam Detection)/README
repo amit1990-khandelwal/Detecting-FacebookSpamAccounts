@@ -1,0 +1,33 @@
+The following steps explains the folder structure and source code and how to run the same.
+1. There are two algorithms implemented to detect fake(inactive) and spam(advertisers) account on Facebook.
+	a) First Algorithm (fake score based on profile data) can be run by fakeDetection_Algo1.py file.
+	b) Second Algorithm (fake account based on interaction data - Markov Chain Clustering) can be run by fakeDetection_Algo2(MarkovAnalysis).py file.
+
+2. The algorithms were run on 10 user accounts. However, since the algorithms require private data (personal chat and inbox messages), we cannot submit the data of other users.  For testing purposes, we are submitting our private data (Amit and Mehak).
+
+3. At the end of run, the output will be an Ego Network graph with 10 nodes having the highest fake score. These 5 nodes are shown with different color from the rest of the nodes.
+
+4. Algorithms run on a single person’s data and show the result of a particular user account. There are global variables changing which runs the algorithm on a different user data. By default, the algorithm will run on “Amit Khandelwal” data. Please change the value of global variables “name” and “my_Name” in fakeDetection_Algo1.py  and “name” in fakeDetection_Algo2(MarkovAnalysis).py to run on other account (Mehak Mehta).
+
+
+Output :-
+Every run creates a graph (for example, AmitKhandelwal_egoGraph.png while running fakeDetection_Algo1.py file) and saves it in the respective directory of the particular User Account.
+
+
+Packages Required :-
+Following are the python packages required to run the source code of the project.
+1. xlwt (ExcelSheet writer)
+2. xlcd (ExcelSheet Reader)
+3. heapq 
+4. cvs (for CSV reader/writer)
+5. matplotlib
+6. Numpy
+7. Scipy
+8. sets
+9. itertools
+10. mcl_clustering (This package’s source code is also added in the source_code zip that is submitted. Please run the “python setup.py install” command in the package’s repository to install it).
+11. networkx
+
+
+
+ 

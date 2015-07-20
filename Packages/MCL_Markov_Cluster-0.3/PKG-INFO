@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: MCL_Markov_Cluster
+Version: 0.3
+Summary: Markov Cluster algorithm implementation
+Home-page: https://github.com/koteth/python_mcl
+Author: Gabriele Lami
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: MCL markov clustering graph
+Platform: UNKNOWN
